@@ -1,0 +1,8 @@
+# resource folders
+node_modules
+.sass-cache
+package-lock.json
+dist/
+
+# misc files
+.DS_Store

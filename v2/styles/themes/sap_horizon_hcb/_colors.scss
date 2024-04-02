@@ -1,0 +1,242 @@
+/*! --------------------------------------- *\
+ *  VARIABLES - COLORS
+ * ---------------------------------------- */
+
+
+ $color-list: (
+    background: (
+        white: #000000,
+        normal: #12171C,
+        faded: lighten(#12171C, .7%), // --background-normal
+        dark: rgba(255, 255, 255, .5) // --color-neutral-6 0.5
+    ),
+    foreground: (
+        white: #000000
+    ),
+    primary: (
+        1: #262626,
+        2: #585858,
+        3: #999999,
+        4: #FFFFFF,
+        5: #FFFFFF,
+        6: #FFFFFF,
+        faded: rgba(255, 255, 255, .5),
+        background: #FFFFFF ,
+    ),
+    neutral: (
+        1: #212628,
+        2: #262626,
+        3: #585858,
+        4: #B3B3B3,
+        5: #FFFFFF,
+        6: #FFFFFF,
+        7: #FFFFFF,
+        faded-1: rgba(255, 255, 255, .075),
+        faded-2: rgba(255, 255, 255, .25), // --color-neutral-3
+        faded-3: rgba(255, 255, 255, .75), // --color-neutral-3 
+        faded-4: rgba(255, 255, 255, .25), // --color-neutral-5
+        white-faded: rgba(#000000, .5),
+        background: #B3B3B3, // maintain 4 color in dark theme
+    ),
+    accent: (
+        white: (
+            4: #FFFFFF
+        ),
+        aqua: (
+            1: #212628,
+            2: #262626,
+            3: #999999,
+            4: #FFFFFF,
+            5: #E7E9EA,
+            6: #FFFFFF,
+        ),
+        teal: (
+            1: #212628,
+            2: #262626,
+            3: #999999,
+            4: #FFFFFF,
+            5: #E7E9EA,
+            6: #FFFFFF,
+        ),
+        green: (
+            1: #0E2B16,
+            2: #164323,
+            3: #256F3A,
+            4: #99CC99,
+            5: #EBF5CB,
+            6: #F5FAE5,
+        ),
+        yellow: (
+            1: #212628,
+            2: #262626,
+            3: #999999,
+            4: #FFFFFF,
+            5: #E7E9EA,
+            6: #FFFFFF,
+        ),
+        orange: (
+            1: #450B00,
+            2: #6D1900,
+            3: #A93E00,
+            4: #FFAB1D,
+            5: #FFF3B8,
+            6: #FFF8D6,
+        ),
+        red: (
+            1: #350000,
+            2: rgba(244, 74, 74, .25), 
+            3: #AA0808,
+            4: #FF5E5E,
+            5: #FFD5EA,
+            6: #FFEAF4,
+        ),
+        pink: (
+            1: #212628,
+            2: #262626,
+            3: #999999,
+            4: #FFFFFF,
+            5: #E7E9EA,
+            6: #FFFFFF,
+        ),
+        purple: (
+            1: #212628,
+            2: #262626,
+            3: #999999,
+            4: #FFFFFF,
+            5: #E7E9EA,
+            6: #FFFFFF,
+        ),
+        blue: (
+            1: #212628,
+            2: #262626,
+            3: #999999,
+            4: #FFFFFF,
+            5: #E7E9EA,
+            6: #FFFFFF,
+        ),
+        grey: (
+            1: #212628,
+            2: #262626,
+            3: #999999,
+            4: #FFFFFF,
+            5: #E7E9EA,
+            6: #FFFFFF,
+        ),
+        violet: (
+            1: #212628,
+            2: #262626,
+            3: #999999,
+            4: #FFFFFF,
+            5: #E7E9EA,
+            6: #FFFFFF,
+        ),
+        ultramarine: (
+            1: #212628,
+            2: #262626,
+            3: #999999,
+            4: #FFFFFF,
+            5: #E7E9EA,
+            6: #FFFFFF,
+        ),
+    ),
+    chart: (
+        aqua:(
+            1: #00274E,
+            2: #013B64,
+            3: #00709F,
+            4: #2DD6EF,
+            5: #B8F3FF,
+            6: #DBF9FF,
+        ),
+        teal: (
+            1: #012931,
+            2: #02414C,
+            3: #046C7A,
+            4: #2CE0BF,
+            5: #C2FCEE,
+            6: #DAFDF5,
+        ),
+        green: (
+            1: #0E2B16,
+            2: #164323,
+            3: #256F3A,
+            4: #97DD40,
+            5: #EBF5CB,
+            6: #F5FAE5,
+
+        ),
+        yellow:(
+            1: #3D1F00,
+            2: #523100,
+            3: #915E00,
+            4: #FFB727,
+            5: #FCE8A9,
+            6: #FDF5C9,            
+        ),
+        orange: (
+            1: #450B00,
+            2: #6D1900,
+            3: #A93E00,
+            4: #FFC933,
+            5: #FFF3B8,
+            6: #FFF8D6,
+        ),
+        red: (
+            1: #350000,
+            2: #5A0404,
+            3: #AA0808,
+            4: #FF8CB2,
+            5: #FFD5EA,
+            6: #FFEAF4,
+        ),
+        pink: (
+            1: #28004A,
+            2: #510080,
+            3: #A100C2,
+            4: #FF8AF0,
+            5: #FFDCF3,
+            6: #FFF0FA,
+        ),
+        purple: (
+            1: #350E30,
+            2: #451A3F,
+            3: #76236A,
+            4: #E086D3,
+            5: #FCCFF5,
+            6: #FEEAFC,
+        ),
+        blue: (
+            1: #00144A,
+            2: #002A86,
+            3: #0057D2,
+            4: #89D1FF,
+            5: #D1EFFF,
+            6: #EBF8FF,
+        ),
+        grey: (
+            1: #12171C,
+            2: #223548,
+            3: #354A5F,
+            4: #A9B4BE,
+            5: #EAECEE,
+            6: #F5F6F7,
+        ),
+        violet: (
+            1: #510136,
+            2: #71014B,
+            3: #BA066C,
+            4: #FEADC8,
+            5: #FFDCE8,
+            6: #FFF0F5,
+        ),
+        ultramarine: (
+            1: #0E0637,
+            2: #1C0C6E,
+            3: #470CED,
+            4: #B894FF,
+            5: #E2D8FF,
+            6: #F1ECFF,
+
+        ),
+    )
+);
