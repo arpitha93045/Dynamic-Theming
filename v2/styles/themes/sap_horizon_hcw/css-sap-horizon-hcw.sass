@@ -1,0 +1,11 @@
+@import '../../utils/mixins'
+@import 'colors'
+@import 'colors_dark'
+@import 'colors_custom'
+@import '../../base/scrollbars'
+
+\:root
+    @include css-var-list('color', $color-list)
+    @include css-var-list('color-dark', $color-list-dark)
+    @include css-var-list('color-dark-actioncard', $color-list-dark-action-card)
+    @include css-var-list('color-custom', $color-list-custom)
